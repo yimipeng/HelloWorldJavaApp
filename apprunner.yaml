@@ -4,7 +4,7 @@ build:
   commands:
     build:
       - mvn clean package
-      - wget https://github.com/aws-observability/aws-otel-java-instrumentation/releases/download/v1.9.0/aws-opentelemetry-agent.jar -O target/aws-opentelemetry-agent.jar
+      - wget https://github.com/aws-observability/aws-otel-java-instrumentation/releases/download/v1.9.0/aws-opentelemetry-agent.jar -O /app/aws-opentelemetry-agent.jar
 
 run:
   command: java -jar target/HelloWorldJavaApp-1.0-SNAPSHOT.jar -Xms256m .
